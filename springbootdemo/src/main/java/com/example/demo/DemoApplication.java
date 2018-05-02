@@ -12,12 +12,14 @@ public class DemoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
-	
-	 @RequestMapping("/")
-	    public String home() {
-       
-	        return "Welcoming Gus to Docker Container Demo ";
-	    }
-	 
-	
+
+	@RequestMapping("/")
+	public String home() {
+		for ( int i=0;i<1000;i++)
+		{
+		    //sleep	
+		}
+		return "Welcoming Gus to Docker Container Demo ";
+	}
+
 }
