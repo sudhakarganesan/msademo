@@ -18,17 +18,15 @@ public class DemoApplication {
 	
 	 @RequestMapping("/")
 	    public String home() {
-	        return "Welcome GUs !! to watch Docker Container Demo";
-	    }
-	 
-	 @RequestMapping(value="/host")
-	    public String getPod() {
 	        try {
-				return "Docker Container Demo from "+ InetAddress.getLocalHost().getHostName();
+				return "Welcome to Docker Container Demo "+InetAddress.getLocalHost().getHostName();
 			} catch (UnknownHostException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-	        return "Docker Container Demo";
+	        
+	        return "Welcome to Docker Container Demo ";
 	    }
+	 
+	
 }
