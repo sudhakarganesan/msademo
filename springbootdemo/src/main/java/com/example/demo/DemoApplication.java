@@ -1,8 +1,5 @@
 package com.example.demo;
 
-import java.net.InetAddress;
-import java.net.UnknownHostException;
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,14 +15,8 @@ public class DemoApplication {
 	
 	 @RequestMapping("/")
 	    public String home() {
-//	        try {
-//				return "Welcome to Docker Container Demo "+InetAddress.getLocalHost().getHostName();
-//			} catch (UnknownHostException e) {
-//				// TODO Auto-generated catch block
-//				e.printStackTrace();
-//			}
-	        
-	        return "Welcome to Docker Container Demo ";
+       
+	        return "Welcoming Gus to Docker Container Demo ";
 	    }
 	 
 	
