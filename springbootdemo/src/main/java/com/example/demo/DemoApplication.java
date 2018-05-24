@@ -19,7 +19,7 @@ public class DemoApplication {
 		{
 		    //sleep	
 		}
-		return "Devops team Welcoming you all to Docker Container Demo";
+		return "Tech Arch team Welcoming you all to Docker Container Demo";
 	}
 
 }
